@@ -16,7 +16,9 @@ public class KniffelTableRenderer implements TableCellRenderer{
     public Component getTableCellRendererComponent(JTable jtable, Object o, boolean bln, boolean bln1, int i, int i1) {
         if(o instanceof Boolean){
             JCheckBox box = new JCheckBox();
-            box.setSelected((boolean)o);
+            if(bln1 && !(boolean)o){
+                box.setSelected(true);
+            }
             return box;
         }
         else
