@@ -31,6 +31,7 @@ public class KniffelGUI extends java.awt.Frame {
         jTextField4 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
 
+        setTitle("Kniffel");
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 exitForm(evt);
@@ -49,6 +50,9 @@ public class KniffelGUI extends java.awt.Frame {
             }
         ));
         jScrollPane1.setViewportView(jTable1);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(3).setResizable(false);
+        }
 
         jButton1.setText("würfeln");
         jButton1.setToolTipText("");
