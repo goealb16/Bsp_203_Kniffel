@@ -8,6 +8,7 @@ public class KniffelGUI extends java.awt.Frame {
    
     public KniffelGUI() {
         initComponents();
+        
     }
 
    
