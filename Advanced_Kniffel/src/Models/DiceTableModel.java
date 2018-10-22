@@ -49,7 +49,11 @@ public class DiceTableModel extends AbstractTableModel{
         return super.isCellEditable(i, i1); //To change body of generated methods, choose Tools | Templates.
     }
 
-    
+    public ArrayList<Dice> getVals() {
+        return vals;
+    }
+
+     
     
     
 }

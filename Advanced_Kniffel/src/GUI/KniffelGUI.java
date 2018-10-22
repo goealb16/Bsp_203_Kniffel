@@ -2,6 +2,7 @@
 
 package GUI;
 
+import BL.Dice;
 import Models.DiceTableRenderer;
 import Models.DiceTableModel;
 import Models.KniffelTableModel;
@@ -74,7 +75,9 @@ public class KniffelGUI extends java.awt.Frame {
                 return canEdit [columnIndex];
             }
         });
+        tableWürfel.setAutoscrolls(false);
         tableWürfel.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tableWürfel.setDebugGraphicsOptions(javax.swing.DebugGraphics.BUFFERED_OPTION);
         tableWürfel.setDoubleBuffered(true);
         tableWürfel.setMinimumSize(new java.awt.Dimension(60, 260));
         tableWürfel.setName(""); // NOI18N
@@ -222,7 +225,11 @@ public class KniffelGUI extends java.awt.Frame {
 
     private void btWürfelnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btWürfelnActionPerformed
 
-    kniffelModel.add();
+
+        for (Dice dice : diceModel.getVals()) {
+            System.out.println(dice.isFixed());
+        }
+         
 
     }//GEN-LAST:event_btWürfelnActionPerformed
 
