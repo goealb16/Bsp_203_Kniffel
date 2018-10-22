@@ -14,14 +14,23 @@ import javax.swing.table.TableCellRenderer;
 public class DiceTableRenderer implements TableCellRenderer{
     @Override
     public Component getTableCellRendererComponent(JTable jtable, Object o, boolean bln, boolean bln1, int i, int i1) {
-        Dice x = (Dice)o;
-        JLabel l = new JLabel(x.getImg(),JLabel.CENTER);
+        Dice dice = (Dice)o;
+        JLabel l = new JLabel(dice.getImg(),JLabel.CENTER);
+        l.setOpaque(true);
+        boolean fixed = dice.isFixed();
         
-        if(o instanceof Boolean)
-            if((boolean)o){
-              l.setOpaque(true);
-            l.setBackground(Color.yellow);  
-            }
+        if(bln1 && !fixed){
+            dice.setFixed(true);
+            l.setBackground(Color.yellow); 
+        }else if(bln1 && fixed){
+            dice.setFixed(false);
+            l.setBackground(Color.white); 
+        }
+        else if(fixed){
+            l.setBackground(Color.yellow);
+        }
+              System.out.println(dice.isFixed());
+           
         return l;
     }
 
