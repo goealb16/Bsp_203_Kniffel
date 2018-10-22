@@ -14,18 +14,18 @@ public class KniffelTableModel extends AbstractTableModel {
 
     public KniffelTableModel() {
         rows.add(new KniffelRow("Nur Einser", Boolean.FALSE, 0));
-         rows.add(new KniffelRow("Nur Zweier", Boolean.FALSE, 0));
-          rows.add(new KniffelRow("Nur Dreier", Boolean.FALSE, 0));
-           rows.add(new KniffelRow("Nur Vierer", Boolean.FALSE, 0));
-            rows.add(new KniffelRow("Nur Fünfer", Boolean.FALSE, 0));
-             rows.add(new KniffelRow("Nur Sechser", Boolean.FALSE, 0));
-              rows.add(new KniffelRow("Pasch 3", Boolean.FALSE, 0));
-               rows.add(new KniffelRow("Pasch 4", Boolean.FALSE, 0));
-                rows.add(new KniffelRow("Full House", Boolean.FALSE, 0));
-                 rows.add(new KniffelRow("Straße klein", Boolean.FALSE, 0));
-                  rows.add(new KniffelRow("Straße groß", Boolean.FALSE, 0));
-                   rows.add(new KniffelRow("Kniffel(nur 5er)", Boolean.FALSE, 0));
-                    rows.add(new KniffelRow("Chane", Boolean.FALSE, 0));
+        rows.add(new KniffelRow("Nur Zweier", Boolean.FALSE, 0));
+        rows.add(new KniffelRow("Nur Dreier", Boolean.FALSE, 0));
+        rows.add(new KniffelRow("Nur Vierer", Boolean.FALSE, 0));
+        rows.add(new KniffelRow("Nur Fünfer", Boolean.FALSE, 0));
+        rows.add(new KniffelRow("Nur Sechser", Boolean.FALSE, 0));
+        rows.add(new KniffelRow("Pasch 3", Boolean.FALSE, 0));
+        rows.add(new KniffelRow("Pasch 4", Boolean.FALSE, 0));
+        rows.add(new KniffelRow("Full House", Boolean.FALSE, 0));
+        rows.add(new KniffelRow("Straße klein", Boolean.FALSE, 0));
+        rows.add(new KniffelRow("Straße groß", Boolean.FALSE, 0));
+        rows.add(new KniffelRow("Kniffel(nur 5er)", Boolean.FALSE, 0));
+        rows.add(new KniffelRow("Chane", Boolean.FALSE, 0));
     }
 
     @Override
@@ -60,6 +60,13 @@ public class KniffelTableModel extends AbstractTableModel {
     
     public KniffelRow getRow(int i){
         return rows.get(i);
+    }
+    
+    public void add(){
+        
+       
+ 
+
     }
 
 }

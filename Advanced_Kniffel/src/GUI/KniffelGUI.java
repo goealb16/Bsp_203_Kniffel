@@ -43,6 +43,7 @@ public class KniffelGUI extends java.awt.Frame {
         tfGesamtPunkte = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(240, 240, 240));
         setTitle("Kniffel");
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
@@ -109,6 +110,8 @@ public class KniffelGUI extends java.awt.Frame {
         ));
         jScrollPane2.setViewportView(tableScore);
 
+        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+
         jLabel3.setText("Obere Summe:");
 
         tfObererBonus.setText("Oberer Bonus:");
@@ -126,7 +129,7 @@ public class KniffelGUI extends java.awt.Frame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
                         .addComponent(tfGesamtPunkte, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -214,7 +217,9 @@ public class KniffelGUI extends java.awt.Frame {
     }//GEN-LAST:event_exitForm
 
     private void btWürfelnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btWürfelnActionPerformed
-        
+
+    kniffelModel.add();
+
     }//GEN-LAST:event_btWürfelnActionPerformed
 
     
