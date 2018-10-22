@@ -58,6 +58,8 @@ public class KniffelTableModel extends AbstractTableModel {
         return COLS[i];
     }
     
-    
+    public KniffelRow getRow(int i){
+        return rows.get(i);
+    }
 
 }

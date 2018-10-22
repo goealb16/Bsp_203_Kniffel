@@ -80,6 +80,7 @@ public class KniffelGUI extends java.awt.Frame {
         tableWürfel.setRowHeight(52);
         tableWürfel.setShowHorizontalLines(false);
         tableWürfel.setShowVerticalLines(false);
+        tableWürfel.setTableHeader(null);
         jScrollPane1.setViewportView(tableWürfel);
         if (tableWürfel.getColumnModel().getColumnCount() > 0) {
             tableWürfel.getColumnModel().getColumn(3).setResizable(false);
@@ -87,6 +88,11 @@ public class KniffelGUI extends java.awt.Frame {
 
         btWürfeln.setText("würfeln");
         btWürfeln.setToolTipText("");
+        btWürfeln.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btWürfelnActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Gewinnkarte");
 
@@ -206,6 +212,10 @@ public class KniffelGUI extends java.awt.Frame {
     private void exitForm(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_exitForm
         System.exit(0);
     }//GEN-LAST:event_exitForm
+
+    private void btWürfelnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btWürfelnActionPerformed
+        
+    }//GEN-LAST:event_btWürfelnActionPerformed
 
     
     public static void main(String args[]) {

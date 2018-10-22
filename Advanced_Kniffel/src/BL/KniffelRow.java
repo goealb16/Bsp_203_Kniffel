@@ -28,4 +28,9 @@ public class KniffelRow {
         this.punkte = punkte;
     }
     private int punkte;
+
+    public void setWahl(Boolean wahl) {
+        this.wahl = wahl;
+    }
+    
 }
