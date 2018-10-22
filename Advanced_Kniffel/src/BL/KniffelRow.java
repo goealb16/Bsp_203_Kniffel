@@ -28,4 +28,16 @@ public class KniffelRow {
         this.punkte = punkte;
     }
     private int punkte;
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public void setWahl(Boolean wahl) {
+        this.wahl = wahl;
+    }
+
+    public void setPunkte(int punkte) {
+        this.punkte = punkte;
+    }
 }
